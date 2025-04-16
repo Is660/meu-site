@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de Adivinhação</title>
+    <title>Exibir Imagem</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Jogo de Adivinhação</h1>
-        <p>Eu escolhi um número entre 1 e 100. Tente adivinhar!</p>
+        <h1>Exibir Imagem</h1>
+        <p>Insira o URL de uma imagem abaixo para exibi-la:</p>
 
-        <input type="number" id="guess" placeholder="Digite seu palpite" />
-        <button onclick="checkGuess()">Adivinhar</button>
+        <input type="text" id="imageUrl" placeholder="Cole o URL da imagem" />
+        <button onclick="displayImage()">Exibir Imagem</button>
 
-        <div id="result"></div>
-
-        <button id="resetBtn" style="display: none;" onclick="resetGame()">Jogar novamente</button>
+        <div id="imageContainer" style="display:none;">
+            <h2>Sua Imagem:</h2>
+            <img id="image" src="" alt="Imagem" />
+        </div>
     </div>
 
     <script src="script.js"></script>
