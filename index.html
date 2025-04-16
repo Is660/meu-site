@@ -3,21 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exibir Imagem</title>
+    <title>Chatbot Inteligente</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Exibir Imagem</h1>
-        <p>Insira o URL de uma imagem abaixo para exibi-la:</p>
-
-        <input type="text" id="imageUrl" placeholder="Cole o URL da imagem" />
-        <button onclick="displayImage()">Exibir Imagem</button>
-
-        <div id="imageContainer" style="display:none;">
-            <h2>Sua Imagem:</h2>
-            <img id="image" src="" alt="Imagem" />
-        </div>
+    <div class="chat-container">
+        <h1>Chat com a IA</h1>
+        <div class="chat-box" id="chatBox"></div>
+        <input type="text" id="userInput" placeholder="Digite sua mensagem..." />
+        <button onclick="sendMessage()">Enviar</button>
     </div>
 
     <script src="script.js"></script>
